@@ -65,7 +65,7 @@ const All = () => {
               <div className="flex justify-between">
                 <button
                   onClick={() => handleViewDetails(product._id)}
-                  className="w-full bg-second text-white py-2 rounded hover:bg-blue-500 transition"
+                  className="w-full bg-first text-white py-2 rounded hover:bg-blue-500 transition"
                 >
                   View Details
                 </button>
