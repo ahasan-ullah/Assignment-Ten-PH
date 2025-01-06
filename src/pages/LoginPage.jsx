@@ -77,12 +77,12 @@ const LoginPage = () => {
             />
           </div>
           <div className="form-control mt-6 space-y-4">
-            <button className="btn btn-error">Login</button>
+            <button className="p-3 rounded-lg bg-second">Login</button>
           </div>
         </form>
       </div>
       <div className="card card-body bg-base-100 md:w-3/5 mx-auto -top-8">
-        <button onClick={handleGoogleSignIn} className="btn btn-error">
+        <button onClick={handleGoogleSignIn} className="p-3 rounded-lg bg-second">
           Login in with Google
         </button>
         <p className="text-gray-500 text-sm">

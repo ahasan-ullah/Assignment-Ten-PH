@@ -102,7 +102,7 @@ const RegisterPage = () => {
             />
           </div>
           <div className="form-control mt-6 space-y-4">
-            <button className="btn btn-error">Register</button>
+            <button className="p-3 rounded-lg bg-second">Register</button>
             <p className="text-gray-500 text-sm">
               Already have an account?
               <NavLink to={"/auth/login"} className="text-blue-700">

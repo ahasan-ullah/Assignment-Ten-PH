@@ -8,19 +8,19 @@ const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
   const links = (
     <>
-      <NavLink className="p-2 bg-first rounded-lg" to={"/"}>
+      <NavLink className="p-2 rounded-lg bg-second" to={"/"}>
         Home
       </NavLink>
-      <NavLink className="p-2 bg-first rounded-lg" to={"/all"}>
+      <NavLink className="p-2 rounded-lg bg-second" to={"/all"}>
         All Equipment
       </NavLink>
       {user?.email && (
         <>
-          <NavLink className="p-2 rounded-lg bg-first" to={"/add"}>
+          <NavLink className="p-2 rounded-lg bg-second" to={"/add"}>
             Add Equipment
           </NavLink>
           <NavLink
-            className="p-2 rounded-lg bg-first"
+            className="p-2 rounded-lg bg-second"
             to={`/my-product/${user?.email}`}
           >
             My Equipment List
@@ -31,7 +31,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar fixed top-0 z-10 bg-background shadow-sm max-w-7xl mx-auto">
+    <div className="navbar fixed top-0 z-10 bg-base-300 bg-opacity-50 shadow-sm max-w-7xl mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -57,7 +57,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="text-2xl md:text-3xl font-bold text-third">Sports Hub</a>
+        <a className="text-2xl md:text-3xl font-bold text-text">Sports Hub</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 space-x-4">{links}</ul>
@@ -92,7 +92,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/auth/register"
-              className="p-2 border-b-2 rounded-lg bg-second"
+              className="p-2 rounded-lg bg-second"
             >
               Register
             </NavLink>
