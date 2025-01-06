@@ -7,7 +7,7 @@ import Products from "../componets/Products";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="mt-20">
       {/* Banner */}
       <Banner />
 
