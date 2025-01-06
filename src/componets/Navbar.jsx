@@ -8,19 +8,19 @@ const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
   const links = (
     <>
-      <NavLink className="p-2 border rounded-lg" to={"/"}>
+      <NavLink className="p-2 border-b-2 rounded-lg" to={"/"}>
         Home
       </NavLink>
-      <NavLink className="p-2 border rounded-lg" to={"/all"}>
+      <NavLink className="p-2 border-b-2 rounded-lg" to={"/all"}>
         All Equipment
       </NavLink>
       {user?.email && (
         <>
-          <NavLink className="p-2 border rounded-lg" to={"/add"}>
+          <NavLink className="p-2 border-b-2 rounded-lg" to={"/add"}>
             Add Equipment
           </NavLink>
           <NavLink
-            className="p-2 border rounded-lg"
+            className="p-2 border-b-2 rounded-lg"
             to={`/my-product/${user?.email}`}
           >
             My Equipment List
@@ -31,7 +31,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-[#1A1A1A] text-white border-b">
+    <div className="navbar fixed top-0 z-10 bg-background shadow-lg max-w-7xl mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -52,12 +52,12 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-[#1A1A1A] rounded-box z-[1] mt-3 w-48 p-2 shadow space-y-3"
+            className="menu menu-sm dropdown-content bg-gray-300 rounded-box z-[1] mt-3 w-48 p-2 shadow space-y-3"
           >
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl md:text-2xl">Sports Hub</a>
+        <a className="text-2xl md:text-3xl font-bold">Sports Hub</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 space-x-4">{links}</ul>
@@ -77,7 +77,7 @@ const Navbar = () => {
             <Tooltip id="user-avatar-tooltip" place="bottom" />
             <button
               onClick={logout}
-              className="btn btn-sm md:btn btn-error border-none"
+              className="btn btn-sm md:btn border-none bg-first"
             >
               Logout
             </button>
@@ -86,13 +86,13 @@ const Navbar = () => {
           <div className="space-x-4">
             <NavLink
               to="/auth/login"
-              className="btn btn-sm md:btn btn-error border-none"
+              className="btn btn-sm md:btn bg-first border-none"
             >
               Login
             </NavLink>
             <NavLink
               to="/auth/register"
-              className="btn btn-sm md:btn btn-error border-none"
+              className="btn btn-sm md:btn  bg-first border-none"
             >
               Register
             </NavLink>

@@ -11,9 +11,9 @@ const HomeLayout = () => {
     return <LoadingPage></LoadingPage>
   }
   return (
-    <div>
+    <div className="bg-background max-w-7xl mx-auto">
       {/* navbar */}
-      <nav className="bg-[#1A1A1A]">
+      <nav>
         <Navbar></Navbar>
       </nav>
       {/* Outlet */}
