@@ -14,15 +14,19 @@ const Navbar = () => {
       <NavLink className="p-2 border rounded-lg" to={"/all"}>
         All Equipment
       </NavLink>
-      <NavLink className="p-2 border rounded-lg" to={"/add"}>
-        Add Equipment
-      </NavLink>
-      <NavLink
-        className="p-2 border rounded-lg"
-        to={`/my-product/${user?.email}`}
-      >
-        My Equipment List
-      </NavLink>
+      {user?.email && (
+        <>
+          <NavLink className="p-2 border rounded-lg" to={"/add"}>
+            Add Equipment
+          </NavLink>
+          <NavLink
+            className="p-2 border rounded-lg"
+            to={`/my-product/${user?.email}`}
+          >
+            My Equipment List
+          </NavLink>
+        </>
+      )}
     </>
   );
 
