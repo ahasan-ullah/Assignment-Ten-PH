@@ -4,6 +4,7 @@ import LoadingPage from '../pages/LoadingPage'
 import image from '../assets/add-product.jpg'
 
 const Add = () => {
+  document.title="Add Equipments";
   const {user,loading}=useContext(AuthContext);
   const userName=user.displayName;
   const userEmail=user.email;

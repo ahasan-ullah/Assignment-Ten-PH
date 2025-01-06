@@ -6,6 +6,7 @@ import { useLoaderData } from "react-router-dom";
 import updateImg from '../assets/update.jpg'
 
 const UpdatePage = () => {
+  document.title="Update Product";
   const { user } = useContext(AuthContext);
   const userName = user.displayName;
   const userEmail = user.email;

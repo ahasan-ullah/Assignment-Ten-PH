@@ -2,6 +2,7 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const All = () => {
+  document.title="All Equipments";
   const navigate = useNavigate();
   const equipmentData = useLoaderData();
 

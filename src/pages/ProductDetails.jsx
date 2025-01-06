@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 
 const ProductDetails = () => {
+  document.title="Sports hub | Details";
   const product = useLoaderData();
 
   return (

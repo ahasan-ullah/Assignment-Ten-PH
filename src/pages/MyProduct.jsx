@@ -4,6 +4,7 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const MyProduct = () => {
+  document.title="My Products";
   const loadedProducts = useLoaderData();
   const [productsList, setProductsList] = useState(loadedProducts);
   const navigate = useNavigate();

@@ -3,6 +3,7 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
 const LoginPage = () => {
+  document.title="Login";
   const { setUser, loginUser,googleSignIn } = useContext(AuthContext);
   const navigate=useNavigate()
   const loation=useLocation();

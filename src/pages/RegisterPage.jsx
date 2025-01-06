@@ -4,6 +4,7 @@ import swal from "sweetalert";
 import { AuthContext } from "../provider/AuthProvider";
 
 const RegisterPage = () => {
+  document.title="Registration";
   const { registerUser, setUser, updateUser } = useContext(AuthContext);
 
   const handleRegister = (e) => {
