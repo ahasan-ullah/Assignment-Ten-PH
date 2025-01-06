@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import LoadingPage from '../pages/LoadingPage'
+import image from '../assets/add-product.jpg'
 
 const Add = () => {
   const {user,loading}=useContext(AuthContext);
@@ -46,8 +47,8 @@ const Add = () => {
   }
 
   return (
-    <section id="add-product" className="py-12 bg-white text-gray-900">
-      <div className="container mx-auto">
+    <section id="add-product" className="py-12 px-4 bg-white text-gray-900 mt-20 flex flex-col md:flex-row items-center">
+      <div className="container mx-auto md:w-1/2 bg-base-200 p-4">
         <h2 className="text-3xl font-bold text-center mb-6">Add a New Product</h2>
         <form className="max-w-2xl mx-auto bg-gray-100 p-6 rounded-lg" onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -176,10 +177,13 @@ const Add = () => {
               readOnly
             />
           </div>
-          <button type="submit" className="w-full bg-success text-white py-3 rounded-lg hover:bg-[black] transition">
+          <button type="submit" className="w-full bg-first text-white py-3 rounded-lg">
             Submit
           </button>
         </form>
+      </div>
+      <div className="md:w-1/2">
+        <img src={image} alt="" />
       </div>
     </section>
   );
