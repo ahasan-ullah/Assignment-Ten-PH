@@ -62,7 +62,7 @@ const ProductDetails = () => {
           {/* Back Button */}
           <div>
             <button
-              className="w-full bg-blue-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition-all"
+              className="w-full bg-first text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition-all"
               onClick={() => window.history.back()}
             >
               Back to Products
