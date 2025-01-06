@@ -7,7 +7,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const Banner = () => {
   return (
-    <div className="md:mt-16">
+    <div>
       <Carousel>
         <div>
           <img src={Banner1} />
