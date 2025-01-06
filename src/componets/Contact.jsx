@@ -1,5 +1,5 @@
 const Contact= () => (
-  <section id="contact" className="py-12 bg-gray-900 text-white border-b">
+  <section id="contact" className="py-12 bg-gray-900 text-white">
     <div className="container mx-auto text-center">
       <h2 className="text-3xl font-bold mb-6 text-text">Contact Us</h2>
       <p className="text-lg mb-4">We’re here to help! Reach out to us with your queries or feedback.</p>

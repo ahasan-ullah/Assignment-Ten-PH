@@ -11,7 +11,7 @@ import slide5 from '../assets/hockey.jpg'
 import slide6 from '../assets/rugby.jpg'
 
 const Categories = () => (
-  <section id="categories" className="py-12 border-b">
+  <section id="categories" className="py-12">
     <div className="container mx-auto">
       <h2 className="text-3xl font-bold text-center text-text mb-6">
         Sports Items Categories
