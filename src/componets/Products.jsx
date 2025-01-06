@@ -20,7 +20,7 @@ const Products = () => {
     <section id="products" className="py-12">
       <div className="container mx-auto space-y-8">
         <h2 className="text-3xl text-text font-bold text-center">Our Products</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.slice(0, 6).map((product) => (
             <div
               key={product.id}
