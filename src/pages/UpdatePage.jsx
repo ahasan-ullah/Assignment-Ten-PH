@@ -3,6 +3,7 @@ import { AuthContext } from "../provider/AuthProvider";
 import LoadingPage from "../pages/LoadingPage";
 import Swal from "sweetalert2";
 import { useLoaderData } from "react-router-dom";
+import updateImg from '../assets/update.jpg'
 
 const UpdatePage = () => {
   const { user } = useContext(AuthContext);
@@ -70,14 +71,14 @@ const UpdatePage = () => {
   return (
     <section
       id="add-product"
-      className="py-12 bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900"
+      className="py-12 bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 flex flex-col md:flex-row items-center mt-20"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto md:w-1/2 bg-base-200 p-4">
         <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
           Update Product Details
         </h2>
         <form
-          className="max-w-2xl mx-auto bg-white shadow-lg p-8 rounded-lg space-y-4"
+          className="max-w-2xl mx-auto p-8 rounded-lg space-y-4"
           onSubmit={handleSubmit}
         >
           <div className="mb-4">
@@ -259,6 +260,9 @@ const UpdatePage = () => {
             Update
           </button>
         </form>
+      </div>
+      <div className="md:w-1/2">
+        <img src={updateImg} alt="" />
       </div>
     </section>
   );
